@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS System</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        input, select { width: 100%; padding: 5px; margin: 5px 0; }
+        button { padding: 8px 12px; background: #28a745; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Applicant Tracking System</h2>
+    
+    <h3>Add Candidate</h3>
+    <input type="text" id="jobTitle" placeholder="Job Title">
+    <input type="text" id="name" placeholder="Full Legal Name">
+    <input type="text" id="phone" placeholder="Contact Number">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="location" placeholder="Current Location (City/State)">
+    <select id="relocation">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <input type="text" id="availability" placeholder="Availability to Start">
+    <input type="text" id="workAuth" placeholder="Work Authorization">
+    <input type="text" id="ssn" placeholder="SSN (Last 4 Digits)">
+    <input type="text" id="linkedin" placeholder="LinkedIn Profile">
+    <input type="text" id="rate" placeholder="Expected Hourly Rate (C2C/W2/1099)">
+    <input type="text" id="experience" placeholder="Total Experience">
+    <input type="file" id="resume">
+    <button onclick="addCandidate()">Add Candidate</button>
+    
+    <h3>Add Job</h3>
+    <input type="text" id="client" placeholder="Client">
+    <input type="text" id="rateJob" placeholder="Rate">
+    <input type="text" id="payRate" placeholder="Pay Rate">
+    <input type="text" id="jobTitleJob" placeholder="Job Title">
+    <input type="text" id="locationJob" placeholder="Location">
+    <input type="text" id="mode" placeholder="Mode (Onsite/Hybrid/Remote)">
+    <input type="text" id="skills" placeholder="Skills">
+    <input type="text" id="exp" placeholder="Experience">
+    <input type="date" id="dueDate">
+    <textarea id="jobDesc" placeholder="Job Description"></textarea>
+    <button onclick="addJob()">Add Job</button>
+    
+    <h3>Add Submission</h3>
+    <input type="text" id="jobTitleSub" placeholder="Job Title">
+    <input type="text" id="nameSub" placeholder="Full Legal Name">
+    <input type="text" id="phoneSub" placeholder="Contact Number">
+    <input type="text" id="emailSub" placeholder="Email">
+    <input type="text" id="locationSub" placeholder="Current Location (City/State)">
+    <select id="relocationSub">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <input type="text" id="availabilitySub" placeholder="Availability to Start">
+    <input type="text" id="workAuthSub" placeholder="Work Authorization">
+    <input type="text" id="ssnSub" placeholder="SSN (Last 4 Digits)">
+    <input type="text" id="linkedinSub" placeholder="LinkedIn Profile">
+    <input type="text" id="rateSub" placeholder="Expected Hourly Rate (C2C/W2/1099)">
+    <input type="text" id="experienceSub" placeholder="Total Experience">
+    <input type="file" id="resumeSub">
+    <input type="file" id="otherDocs">
+    <button onclick="addSubmission()">Add Submission</button>
+</body>
+</html>
